@@ -1,4 +1,4 @@
-package com.bellotech.urlshortener;
+package com.bellotech.urlshortener.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,3 +1,4 @@
+
 html, body {
     height: 100%;
 }
@@ -6,10 +7,8 @@ body {
     padding-top: 60px;
     padding-bottom: 40px;
     display: flex;
-
-flex-direction: column;
+    flex-direction: column;
     min-height: 100vh;
-
 }
 
 .navbar-brand {
@@ -18,11 +17,7 @@ flex-direction: column;
 }
 
 body > .container {
-
     flex: 1 0 auto;
     display: flex;
     flex-direction: column;
-
 }
-
-
