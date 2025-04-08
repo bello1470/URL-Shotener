@@ -1,6 +1,7 @@
 package com.bellotech.urlshortener.web.controller;
 
 import com.bellotech.urlshortener.domain.entities.ShortUrl;
+import com.bellotech.urlshortener.domain.models.ShortUrlDto;
 import com.bellotech.urlshortener.services.ShortUrlService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,7 +21,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String home (Model model) {
-        List<ShortUrl> shortUrls = shortUrlService.findByPublicShortUrls();
+        List<ShortUrlDto > shortUrls = shortUrlService.findByPublicShortUrls();
         model.addAttribute("shortUrls", shortUrls);
         model.addAttribute("baseUrl", "http://localhost:8080/");
         return "index";
